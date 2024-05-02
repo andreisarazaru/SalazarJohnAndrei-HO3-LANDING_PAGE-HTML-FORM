@@ -1,0 +1,559 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body
+{
+  background-color: #f5f5f5;
+}
+.display-photo
+{
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+}
+.submission-form
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.order-form
+{
+  border: 1px solid black;
+  padding: 3%;
+  margin-top: 2%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+
+  background-color: white;
+}
+
+.form-title
+{
+  font-size: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.place-order,
+.cancel
+{
+  padding: 5px;
+  border: none;
+
+  background-color: #a3a3a3;
+
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.place-order:hover,
+.cancel:hover
+{
+  background-color: #737373;
+}
+
+.button-container
+{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+  gap: 50px;
+}
+
+#user-name,
+#user-age,
+#user-email
+{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+  padding: 5px;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#user-name:focus,
+#user-age:focus,
+#user-email:focus
+{
+  outline: none;
+}
+
+#textarea-notes
+{
+  width: 90%;
+  padding: 5px;
+  border: 1px dotted black;
+  outline: 1px solid black;
+  resize: none;
+}
+
+#textarea-notes:focus
+{
+  outline: 1px solid black;
+}
+
+.place-order,
+.cancel
+{
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.pastry-type
+{
+    width: 100%;
+    position: relative;
+    margin: 20px;
+}
+
+.pastry-type *
+{
+  box-sizing: border-box;
+}
+
+.select
+{
+  background: #a3a3a3;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.select-clicked
+{
+  box-shadow: 5px 5px solid black;
+}
+
+.select:hover
+{
+  background-color: #e5e5e5;
+}
+
+.caret
+{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: 0.3s;
+}
+
+.caret-rotate
+{
+  transform: rotate(180deg);
+}
+
+.menu
+{
+  list-style: none;
+  padding: 5px;
+  
+  background: #e5e5e5;
+  border: none;
+  
+  box-shadow: 2px 2px 5px black;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.menu li
+{
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.menu li:hover
+{
+  background: #a3a3a3;
+}
+
+.active
+{
+  background: #a3a3a3;
+}
+
+.menu-open
+{
+  display: block;
+  opacity: 1;
+}
+
+/* Les Plats Landing Page */
+
+
+
+.header
+{
+  display: grid;
+  grid-template-rows: 0.1fr 0.2fr 2fr;
+  grid-template-columns: 0.1fr 1fr;
+
+  box-shadow: 0px 0px 20px black;
+  position:-webkit-sticky;
+  position:sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+
+}
+
+.waves-photo
+{
+  width: 100%;
+  height: 100px;
+}
+
+
+.discount-container
+{
+  grid-column: 1 / 3;
+  grid-row: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #C9AD93;
+  padding: 5px;
+  border-bottom: 3px solid black;
+  font-weight: bold;
+  font-size: 0.8rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navigation
+{
+  padding: 5px;
+}
+
+.logo-container
+{
+  grid-column: 1 / 1;
+  grid-row: 2 / 4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo
+{
+  height: 40px;
+  width: 90px;
+}
+
+
+.navigation
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  grid-column: 2 / 2;
+  grid-row: 3 / 3;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navigation a
+{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.navigation a:hover
+{
+  color: black;
+  font-weight: bold;
+}
+
+#product-carousel-container
+{
+  margin: 2%;
+
+  display: grid;
+  grid-template-columns: 700px 700px;
+  gap: 50px;
+}
+
+.main-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#new-order-button
+{
+  margin: 10px 0px 0px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  background-color: #C9AD93;
+}
+
+#new-order-button:hover
+{
+  background-color: #d4bda8;
+}
+
+
+.intro
+{
+  font-size: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-style: italic;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-carousel-subcontainer
+{
+  position: relative;
+}
+
+.product-photo
+{
+  width: 100%;
+  height: 50%;
+}
+
+.product-list-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+#best-sellers-title,
+#new-arrivals
+{
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
+.product-list
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 0.3fr;
+  gap: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.product-item
+{
+  display: grid;
+  grid-template-columns: 200px 300px 100px;
+  grid-row: 0.5fr 1fr;
+  gap: 10px;
+
+  padding: 15px;
+  border-bottom: 1px solid  #737373;
+
+  font-size: 0.8rem;
+}
+
+.product-item:hover
+{
+  padding: 20px;
+  box-shadow: 0px 5px 10px #737373;
+  border: none;
+}
+
+.product-photo
+{
+  height: 100px;
+  width: 200px;
+  grid-column: 1 / 1;
+  grid-row: 1 / 3;
+}
+
+.product-name
+{
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.product-price
+{
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+#footer
+{
+  margin-top: 2%;
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  background-color: #0a0a0a;
+  color: #fafafa;
+
+  gap: 15px;
+}
+
+.social-media-link
+{
+  list-style: none;
+  color:#fafafa ;
+
+  font-size: 0.9rem;
+}
+
+.contact-information
+{
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  font-size: 0.9rem;
+}
+
+.newsletter-sign-up-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+
+
+}
+
+.newsletter-sign-up
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.newsletter-title
+{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#newsletter-input
+{
+  width: 400px;
+  padding: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 5px;
+  align-self: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#submit-newsletter
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+  border: none;
+  background-color: #C9AD93;
+  font-size: 1rem;
+}
+
+#newsletter-input:focus
+{
+  outline: none;
+}
+
+.branches
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  font-size: 0.9rem;
+}
+
+.footer-title
+{
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about-us
+{
+  font-size: 0.9rem;
+}
+

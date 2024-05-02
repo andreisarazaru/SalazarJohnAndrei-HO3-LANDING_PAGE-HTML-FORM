@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Plats</title>
+  <link rel = "icon" href = "icons/les-plats-favicon.svg">
+  <link rel = "stylesheet" href = "styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+  <div class = "les-plats-container">
+    <div class = "header">
+      <div class = "discount-container">
+        <div>Summer Sale! Get 30% discount on every 2 dozens of croissants!</div>
+      </div>
+      <div class = "logo-container">
+        <img id = "logo" src = "images/Les Plats-logo-black.png">
+      </div>
+      <div class = "navigation">
+        <a href = "#product-carousel-container">Home</a>
+        <a href = "#footer">About Us</a>
+        <a href = "#best-sellers-title">Food Gallery</a>
+        <a href = "events.html">Events</a>
+        <a href = "faq.html">FAQ</a>
+      </div>
+    </div>
+    <div class = "main-container">
+    <div id = "product-carousel-container">
+      <div class = "product-carousel-subcontainer">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="product-carousel">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/carousel-croissant-one.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/carousel-croissant-two.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/carousel-croissant-three.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <a href = "forms.html">
+            <button id = "new-order-button">Start New Order</button>
+          </a>
+        </div>
+      </div>
+      <div class = "intro">
+       <div>
+        &nbsp;&nbsp;&nbsp;"Indulge in Timeless French Delights Since 1978 - Welcome to Les Plats, 
+        Where Every Bite is a Taste of Parisian Perfection!"</div>
+      </div>
+      </div>
+    </div>
+      <div>
+        <img src = "images/waves.png" class = "waves-photo">
+      </div>
+
+    <div class = "title-container">
+      <div id = "best-sellers-title">Our Best Sellers:</div>
+    </div>
+
+    <div class = "product-list-container">
+      <div class = "product-list">
+        <div class = "product-item">
+          <img src = "images/croissant.jpg" class = "product-photo">
+          <div class = "product-name">Croissant</div>
+          <div class = "product-price">₱89</div>
+          <div class = "product-description">Dive into layers of golden, buttery perfection with our freshly baked croissants. 
+            Crisp on the outside, soft and fluffy on the inside, these French classics are a 
+            delightful treat any time of day.</div>
+        </div>
+        <div class = "product-item">
+          <img src = "images/muffin.jpg" class = "product-photo">
+          <div class = "product-name">Muffin</div>
+          <div class = "product-price">₱79</div>
+          <div class = "product-description">Indulge your cravings with our moist and fluffy muffins studded with rich chocolate chips. 
+            Perfect for breakfast on-the-go or as a sweet afternoon pick-me-up.</div>
+        </div>
+        <div class = "product-item">
+          <img src = "images/crepe.jpg" class = "product-photo">
+          <div class = "product-name">Crepe</div>
+          <div class = "product-price">₱89</div>
+          <div class = "product-description">Experience a taste of Paris with our thin, lacy crepes filled with a medley of
+            fresh berries and drizzled with sweet maple syrup. Each bite is a symphony of flavors and textures.</div>
+        </div>
+        <div class = "product-item">
+          <img src = "images/macaroons.avif" class = "product-photo">
+          <div class = "product-name">Macaroons</div>
+          <div class = "product-price">₱99</div>
+          <div class = "product-description">Transport yourself to a patisserie in Paris with our delicate and colorful macarons. 
+            Each bite-sized treat features a crisp shell and a soft, chewy interior bursting with delightful flavors
+             like raspberry, pistachio, and salted caramel.</div>
+        </div>
+        <div class = "product-item">
+          <img src = "images/profiterole.avif" class = "product-photo">
+          <div class = "product-name">Profiterole</div>
+          <div class = "product-price">₱69</div>
+          <div class = "product-description">Treat yourself to our airy, golden profiteroles filled with luscious cream and topped
+            with a velvety chocolate ganache. A divine dessert that's sure to satisfy your sweet tooth.</div>
+        </div>
+        <div class = "product-item">
+          <img src = "images/eclair.jpg" class = "product-photo">
+          <div class = "product-name">Eclairs</div>
+          <div class = "product-price">₱59</div>
+          <div class = "product-description">Indulge in a heavenly combination of light, fluffy pastry shells filled with rich, 
+            creamy custard and topped with a luscious layer of glossy chocolate ganache. Each bite of
+             our eclairs is a decadent experience that will leave you craving more.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "title-container">
+      <div id = "new-arrivals">Other Pastries:</div>
+    </div>
+
+    <div class = "product-list-container">
+      <div class = "product-list">
+        <div class = "product-item">
+          <img src = "images/pain-au-chocolat.jpg" class = "product-photo">
+          <div class = "product-name">Pain au Chocolat</div>
+          <div class = "product-price">₱119</div>
+          <div class = "product-description">Treat yourself to the quintessential French pastry experience 
+            with our Pain au Chocolat. Delicate layers of buttery, flaky pastry envelop rich, indulgent chocolate, 
+            creating a perfect harmony of textures and flavors.</div>
+        </div>
+        <div class = "product-item">
+          <img src = "images/madelein.jpg" class = "product-photo">
+          <div class = "product-name">Madeleine</div>
+          <div class = "product-price">₱99</div>
+          <div class = "product-description">Transport yourself to the streets of France with our Madeleine, 
+            a beloved classic pastry. These dainty, shell-shaped sponge cakes boast a tender crumb infused 
+            with subtle notes of citrus, offering a delicate balance of sweetness and tanginess. </div>
+        </div>
+        <div class = "product-item">
+          <img src = "images/palmiert.jpg" class = "product-photo">
+          <div class = "product-name">Palmiert</div>
+          <div class = "product-price">₱69</div>
+          <div class = "product-description"> Crisp, golden-brown layers of puff pastry, lovingly caramelized to
+             perfection, await you in our Palmier. Shaped like palm leaves, these delightful pastries offer a 
+             satisfying crunch with every bite, while their subtle sweetness adds a touch of elegance to any occasion.</div>
+        </div>
+        <div class = "product-item">
+          <img src = "images/mille-feuille.jpg" class = "product-photo">
+          <div class = "product-name">Mille-feuille</div>
+          <div class = "product-price">₱129</div>
+          <div class = "product-description"> Prepare to be enchanted by our Mille-feuille,
+             a masterpiece of French pastry craftsmanship. Layers of buttery puff pastry, delicately crisp
+              and golden, alternate with velvety pastry cream, creating a symphony of textures and flavors 
+              that dance on your palate. </div>
+        </div>
+        <div class = "product-item">
+          <img src = "images/tarte-tatin.jpg" class = "product-photo">
+          <div class = "product-name">Tarte Tatin</div>
+          <div class = "product-price">₱159</div>
+          <div class = "product-description">Savor the timeless allure of our Tarte Tatin, a rustic yet 
+            sophisticated dessert that captures the essence of French culinary tradition. Succulent apples,
+             lovingly caramelized to perfection, nestle atop a bed of buttery pastry, creating a symphony 
+             of sweet and tangy flavors that mingle with every forkful. </div>
+        </div>
+        <div class = "product-item">
+          <img src = "images/cannele.jpg" class = "product-photo">
+          <div class = "product-name">Cannele</div>
+          <div class = "product-price">₱69</div>
+          <div class = "product-description"> Delight in the irresistible allure of our Cannelé, 
+            a sublime French pastry beloved for its enchanting contrast of textures and flavors. 
+            Crisp and caramelized on the outside, yet delightfully soft and custardy on the inside, 
+            each bite offers a harmonious blend of vanilla-infused sweetness and subtle hints of rum.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <img src = "images/waves.png" class = "waves-photo">
+    </div>
+    
+    <div class = " newsletter-sign-up-container">
+      <div class="newsletter-sign-up">
+        <div class="newsletter-title">Newsletter:</div>
+        <div>Stay updated with the latest news, offers, and promotions by subscribing to our newsletter!</div>
+        <input type="text" id="newsletter-input" placeholder="yourname@email.com">
+        <button id = "submit-newsletter">Submit</button>
+      </div>
+    </div>
+
+      </div>
+    </div>
+    <div id = "footer"> 
+      <div class="contact-information">
+        <div class="footer-title">Contact Information:</div>
+        <div>Email: info@example.com</div>
+        <div>Phone: +123-456-7890</div>
+        <div>Address: 123 Main Street, City, Country</div>
+        <div>Facebook: <a href="https://www.facebook.com/lesplats" class="social-media-link">Les Plats</a></div>
+        <div>Instagram: <a href="https://www.instagram.com/LesPlatsPastries" class="social-media-link">@LesPlatsPastries</a></div>
+        <div>Twitter: <a href="https://twitter.com/LesPlatsPastries" class="social-media-link">@LesPlatsPastries</a></div>
+      </div>
+    
+      <div class="branches">
+        <div class="footer-title">Branches</div>
+        <div>
+          <div class="footer-title">London Branch</div>
+          Address: 789 Oxford Street, London, UK SW1A 1AA
+          <br>Phone: +44 20 5555 6789
+          <br>Hours: Mon-Fri 9am-6pm, Sat 9am-1pm, Sun Closed
+        </div>
+        <div>
+          <div class="footer-title">Manila Branch</div>
+          Address: 25th Floor, Ayala Tower One, Ayala Avenue, Makati City, Metro Manila, Philippines
+          <br>Phone: +63 2 555-1234
+          <br>Hours: Mon-Sun 9am-7pm
+        </div>
+      </div>
+      <div id="about-us">
+        <div class="footer-title">About us</div>
+        <div>
+          Welcome to Lesplats! We're passionate about creating unforgettable culinary experiences.
+          Our chefs blend traditional techniques with innovative flavors, using fresh, locally-sourced ingredients 
+          to craft dishes that delight. Whether dining in our cozy restaurant or enjoying our food at home, we aim 
+          to exceed your expectations with every bite. Thank you for choosing Lesplats—we can't wait to serve you!
+        </div>
+      </div>
+    </div>
+    
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

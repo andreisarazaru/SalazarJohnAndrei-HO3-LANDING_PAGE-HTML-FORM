@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+
+  <img src = "images/carousel-croissant-one.jpg" class = "display-photo">
+  
+  <div class = "submission-form">
+    <form class = "order-form">
+      <h1 class = "form-title">Fill this:</h1>
+      <div class = "form-row">
+        <label for = "name">Name: *&nbsp;</label>
+        <input type = "text" id = "user-name">
+      </div>
+      <div class = "form-row">
+        <label for = "email">Email: *&nbsp;</label>
+        <input type = "email" id = "user-email">
+      </div>
+      <div class = "form-row">
+        <label for = "age">Age: *&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type = "text" id = "user-age">
+      </div>
+      <div class = "form-row"> 
+        <label for ="pastry-type">Your chosen pastry: *</label>
+     <div class = "pastry-type">
+         <div class = "select">
+           <span class = "selected">Croissant</span>
+          <div class = "caret"></div>
+    </div>
+    <ul class = "menu">
+            <li class = "active">Croissant</li>
+            <li>Muffins</li>
+            <li>Eclairs</li>
+            <li>Macaroons</li>
+            <li>Eclairs</li>
+            <li>Crepe</li>
+            <li>Profiterole</li>
+            </ul>
+      </div>
+      </div>
+      <div class = "form-row">
+        <input type = "radio" value = "dine-in" name = "order-mode">
+        <label>Dine In</label>
+        <input type = "radio" value = "take-home" name = "order-mode">
+        <label>Take Home</label>
+      </div>
+      <div class = "form-row">
+        <div>
+          <label for = "payment-mode">Mode of Payment *</label>
+        </div>
+        <input type = "radio" value = "online-banking" name = "payment-mode">
+        <label>Online Banking</label>
+        <input type = "radio" value = "take-home" name = "payment-mode">
+        <label>Cash</label>
+      </div>
+      <div class = "form-row">
+        <label>Notes to the baker:</label>
+        <textarea placeholder="Extra butter on top..." id = "textarea-notes"></textarea>
+      </div>
+      <div class = "button-container">
+        <div>
+          <button class = "place-order">Place Order</button>
+        </div>
+       <div>
+        <button class = "cancel">Cancel</button>
+       </div>
+      </div>
+    </form>
+  </div> 
+
+<script src = "script.js"></script>
+
+</body>
+</html>
